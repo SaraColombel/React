@@ -6,12 +6,9 @@ import "./ToDo.css"
 
 function ToDo({ todo, date }) {
   return (
-    <>
       <li>
         {todo} - {date}
       </li>
-    </>
-  );
-}
+  );}
 
 export default ToDo

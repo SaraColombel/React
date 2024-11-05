@@ -21,7 +21,6 @@ function App() {
     let count = 0;
 
     return (
-    <>
         <Template>
         <h1>To-Do List</h1>
         <h3>Date du jour : {DATE.toLocaleString()}</h3>
@@ -29,8 +28,7 @@ function App() {
             {TODOS.map(todo => <ToDo key = {count++} todo={todo.todo} date={todo.date} />)}
         </ul>
         </Template>
-    </>
-    );
+    )
 }
 
 export default App;
