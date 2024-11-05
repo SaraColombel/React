@@ -6,7 +6,7 @@ return (
     <header className="navbar">
         <img className="logoImg" src="https://picsum.photos/120/120" />
         <h1>Header</h1>
-        <nav>
+        <nav className="nav">
             <ul>
                 <li>Accueil</li>
                 <li>Blog</li>

@@ -7,6 +7,9 @@
     align-items: center;
 }
 
+.nav{
+    padding-top: 8px;
+}
 
 .logoImg{
     margin-right: 20px;
@@ -25,7 +28,6 @@ ul, li{
     padding : 10px;
     border-radius: 1ch;
     margin-top: 10px;
-
 }
 
 .footer{
