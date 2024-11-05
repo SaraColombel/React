@@ -1,0 +1,45 @@
+.navbar{
+    background-color: thistle;
+    color: black;
+    padding : 15px;
+    border-radius: 1ch;
+    display : flex;
+    align-items: center;
+}
+
+
+.logoImg{
+    margin-right: 20px;
+    border-radius: 1ch;
+}
+
+ul, li{
+    display : flex;
+    padding-right: 20px;
+    font-size: 110%;
+}
+
+.main{
+    background-color: lavenderblush;
+    color: black;
+    padding : 10px;
+    border-radius: 1ch;
+    margin-top: 10px;
+
+}
+
+.footer{
+    background-color: lavender;
+    color: black;
+    padding : 10px;
+    border-radius: 1ch;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 200%;
+}
+
+*{
+    color: #242424;
+}

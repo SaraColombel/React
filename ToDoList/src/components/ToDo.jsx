@@ -1,5 +1,5 @@
-import viteLogo from "/vite.svg";
-import "./ToDo.css";
+import viteLogo from "/vite.svg"
+import "./ToDo.css"
 import Template from "./Template"
 
 // const DATE = new Date();
@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <Template>
-        <h1>ToDo List</h1>
-        <h2>{DATE.toLocaleString()}</h2>
+        <h1>To-Do List</h1>
+        <h3>Date du jour : {DATE.toLocaleString()}</h3>
         <ul>
           <ToDo todo={"Sortir les poubelles"} date={"07/11/2024"} />
           <ToDo todo={"Nettoyer la cuisine"} date={"08/11/2024"} />

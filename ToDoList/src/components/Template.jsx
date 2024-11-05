@@ -1,9 +1,11 @@
+import "./Template.css"
+
 function Template({ children }) {
 return (
     <>
-    <header>
-        <img src="https://picsum.photos/100/100" />
-        <h1>HEADER</h1>
+    <header className="navbar">
+        <img className="logoImg" src="https://picsum.photos/120/120" />
+        <h1>Header</h1>
         <nav>
             <ul>
                 <li>Accueil</li>
@@ -11,21 +13,21 @@ return (
                 <li>Contact</li>
             </ul>
         </nav>
-    </header>m
+    </header>
 
-    <main>
+    <main className="main">
         {children}
     </main>
 
-    <footer>
-        <h1>FOOTER</h1>
+    <footer className="footer">
+        <h1>Footer</h1>
         <ul>
             <li>Mentions légales</li>
             <li>Politique de confidientialité</li>
         </ul>
     </footer>
     </>
-);
+)
 }
 
 export default Template
