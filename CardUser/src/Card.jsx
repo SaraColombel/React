@@ -1,11 +1,11 @@
 import './Card.css'
 
-function Card(){
+function Card({image, pseudo, email, description}){
     return <article className = 'card'>
-        <img src = "https://picsum.photos/200/200"/>
-        <h2>Pseudo</h2>
-        <h3>Email@mail.com</h3>
-        <p>Description : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, sunt iusto. Vitae quasi voluptatem obcaecati aliquam quia aspernatur. Deleniti recusandae quibusdam non a saepe quidem dolorum eos voluptates perspiciatis asperiores!</p>
+        <img src = {image}/>
+        <h2>{pseudo}</h2>
+        <h3>{email}</h3>
+        <p>{description}</p>
     </article>
 }
 
