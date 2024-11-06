@@ -1,10 +1,30 @@
-.card{
-    background-color: thistle;
+article{
     color : #242424;
-    border-radius: 2ch;
+    border-radius: 1.5ch;
     margin-top : 25px;
+    width: 45%;
+    padding-top: 1.3em;
 }
 
 .ThistleColor{
     color : thistle;
+}
+
+.femme{
+    background-color: thistle;
+}
+
+.homme{
+    background-color: lightblue;
+}
+
+.non-binaire{
+    background-color: lightgoldenrodyellow;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
