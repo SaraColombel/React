@@ -74,4 +74,14 @@ function App() {
   return <h1 className="ThistleColor">Aucun utilisateur d'inscrit</h1>;
 }
 
+function handleClick(event){
+  alert()
+}
+return <li onClick={handleClick}>{ingredient} - {prix} euros</li>
+return <li onClick={(event)=>  {
+  alert(ingredient)
+  console.log(event)
+}}>{ingredient} - {prix} euros</li>
+
+
 export default App;
