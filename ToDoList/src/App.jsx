@@ -34,7 +34,7 @@ function App() {
         <Template>
         <h1>To-Do List</h1>
         <h3>Date du jour : {DATE.toLocaleString()}</h3>
-        <ul>
+        <ul className="list">
             {TODOS.map(todo => <ToDo key = {count++} todo={todo.todo} date={todo.date} checked={todo.checked}/>)}
         </ul>
         <Form onSubmit={(event) => handleSubmit(event)}/>

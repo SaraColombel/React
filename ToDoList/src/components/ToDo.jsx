@@ -11,7 +11,7 @@ import "./ToDo.css";
 // }
 
 function ToDo({ todo, date, checked }) {
-  function handleClick(todo) {
+  function handleClick() {
     alert(todo)
   }
   if (checked) {

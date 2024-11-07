@@ -4,12 +4,12 @@ function handleChange(event) {
 }
 return (
     <form onSubmit={onSubmit}>
-    <input
+    <input className='input'
         type="text"
         placeholder="La ToDo"
         onChange={(event) => handleChange(event)}
     ></input>
-    <input
+    <input className='input'
         type="text"
         placeholder="La Date"
         onChange={(event) => handleChange(event)}

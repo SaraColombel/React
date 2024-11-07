@@ -28,3 +28,8 @@ article{
     flex-direction: column;
     align-items: center;
 }
+
+.border{
+    border: solid 3px red;
+    border-radius: 1.5ch;
+}
