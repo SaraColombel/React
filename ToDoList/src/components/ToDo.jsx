@@ -31,8 +31,10 @@ function ToDo({ todo, date, checked, heureRestante }) {
         <input type="checkbox" defaultChecked className="checkbox"></input>
         <p>{date} | <strong>{todo}</strong></p>
         <p className="h">Heures restantes : <strong>{heure}</strong></p>
+        <div className='buttons'>
         <button onClick={handleClickMinus}>-</button>
         <button onClick={handleClickPlus}>+</button>
+        </div>
       </li>
     );
   }
@@ -40,8 +42,10 @@ function ToDo({ todo, date, checked, heureRestante }) {
     <li className="orange">
       <p>{date} | <strong>{todo}</strong></p>
       <p className="h">Heures restantes : <strong>{heure}</strong></p>
+      <div className='buttons'>
       <button onClick={handleClickMinus}>-</button>
       <button onClick={handleClickPlus}>+</button>
+      </div>
     </li>
   );
 }

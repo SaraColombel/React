@@ -51,6 +51,8 @@
   box-shadow: 2px 1px 2px grey;
   font-size: 110%;
   color: #242424;
+  background-color: rgb(231, 173, 231);
+
 }
 
 .h{
@@ -61,3 +63,35 @@
 .checkbox{
   margin-right: 15px;
 }
+
+.buttons{
+  display:flex;
+}
+
+.checkboxfait{
+  font-size: 125%;
+  margin-right: 15px;
+  color: #242424;
+}
+
+.inputDate{
+  background-color: white;
+  margin-right: 1%;
+  border: solid 1px #c0c0c0;
+  border-radius: 0.5ch;
+  height: 25px;
+  font-size: 110%;
+  width: 13%;
+  box-shadow: 2px 1px 2px grey;
+  color: #242424;}
+
+  .inputHeureRestante{
+    background-color: white;
+    margin-right: 1%;
+    border: solid 1px #c0c0c0;
+    border-radius: 0.5ch;
+    height: 25px;
+    font-size: 110%;
+    width: 17%;
+    box-shadow: 2px 1px 2px grey;
+    color: #242424;}

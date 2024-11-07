@@ -15,7 +15,7 @@ const TODOS = [
     {
         todo: "Nettoyer la cuisine",
         date: "08/11/2024",
-        checked: false,
+        checked: true,
         heure: 10,
         categorie: "Maison",
     },
@@ -31,17 +31,30 @@ const TODOS = [
 function App() {
     const DATE = new Date();
     let count = 0;
+    const [todo, setTodo] = useState(TODOS)
     function handleSubmit(event) {
         event.preventDefault();
         const INPUTS = document.querySelectorAll('input[type="text"]');
         INPUTS.forEach((element) => console.log(element.value));
+        const newToDo = {
+            todo : event.target[0].value,
+            date : event.target[1].value,
+            heure : parseInt(event.target[2].value) ,
+            checked : event.target[4].checked,
+            categorie: event.target[3].value
+        }
+        const tab = [...todo, newToDo]
+        console.log(tab)
+
+        setTodo(tab)
     }
+
 
     const [nettoyage, setNettoyage] = useState(true)
     const [formation, setFormation] = useState(true)
     const [maison, setMaison] = useState(true)
 
-    const TODOLIST = TODOS.filter(element => {
+    const TODOLIST = todo.filter(element => {
         if(element.categorie == 'Nettoyage' && !nettoyage == true){
             return false
         } else if (element.categorie == 'Formation' && !formation == true){
@@ -57,9 +70,9 @@ function App() {
             <h3>Date du jour : {DATE.toLocaleString()}</h3>
             <Form onSubmit={(event) => handleSubmit(event)} />
             <section className="sectionFiltre">
-                <label><input type='checkbox' checked={nettoyage} onChange={()=>setNettoyage(!nettoyage)}></input>Nettoyage</label>
-                <label><input type='checkbox' checked={formation} onChange={()=>setFormation(!formation)}></input>Formation</label>
-                <label><input type='checkbox' checked={maison} onChange={()=>setMaison(!maison)}></input>Maison</label>
+                <label><input className="inputFiltre" type='checkbox' checked={nettoyage} onChange={()=>setNettoyage(!nettoyage)}></input>Nettoyage</label>
+                <label><input className="inputFiltre" type='checkbox' checked={formation} onChange={()=>setFormation(!formation)}></input>Formation</label>
+                <label><input className="inputFiltre" type='checkbox' checked={maison} onChange={()=>setMaison(!maison)}></input>Maison</label>
             </section>
             <ul className="list">
                 {TODOLIST.map((todo) => (

@@ -4,6 +4,8 @@
     border-radius: 1ch;
     padding-left: 15px;
     padding-right: 15px;
+    width: 650px;
+    max-width: 650px;
 }
 
 .orange{
@@ -12,6 +14,8 @@
     border-radius: 1ch;
     padding-left: 15px;
     padding-right: 15px;
+    width: 650px;
+    max-width: 650px;
 }
 
 .list{
@@ -24,5 +28,10 @@
     margin-top: 10px;
     label{
         margin-right: 5%;
+        font-size: 120%;
+        color : #242424;
+    }
+    .inputFiltre{
+        margin-right: 8px;
     }
 }
