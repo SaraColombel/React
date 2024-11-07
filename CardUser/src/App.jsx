@@ -51,13 +51,22 @@ const USER = [
 
 function App() {
   let count = 0;
+  const [search, setSearch] = useState('')
+  const USERS_LIST = USER.filter(element => {
+    if(!element.pseudo.includes(search)){
+      return false
+    } else {
+      return true
+    }
+  })
   if (USER.length > 0) {
     return (
       <>
         <h1 className="ThistleColor">Liste des Utilisateurs</h1>
-        <p>Il y a {USER.length} utilisateurs inscrits !</p>
-        <div class="center">
-          {USER.map((user) => (
+        <p>Il y a {USER.length} utilisateurs inscrits!</p>
+        <input type="text" onChange={(event)=>setSearch(event.target.value)}></input>
+        <div className="center">
+          {USERS_LIST.map((user) => (
             <Card
               key={count++}
               image={user.image}
@@ -71,16 +80,19 @@ function App() {
       </>
     );
   }
-  return <h1 className="ThistleColor">Aucun utilisateur d'inscrit</h1>;
+
+  return (
+  <h1 className="ThistleColor">Aucun utilisateur d'inscrit</h1>
+);
 }
 
 export default App;
 
-function Compteur (){
+function Compteur() {
   const [count, setCount] = useState(0)
 
   return <>
-  <p>Compteur : {count}</p>
-  <button onClick={()=>setCount(count + 1)}>Ajouter 1</button>
+    <p>Compteur : {count}</p>
+    <button onClick={() => setCount(count + 1)}>Ajouter 1</button>
   </>
 }

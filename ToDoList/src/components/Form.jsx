@@ -1,3 +1,5 @@
+const CATEGORIES = ["Nettoyage", "Formation", "Maison"]
+
 function Form({ onSubmit }) {
     function handleChange(event) {
         console.log(event.target.value);
@@ -22,10 +24,8 @@ function Form({ onSubmit }) {
             <select className='input'
             placeholder="Catégorie"
             onChange={(event) => handleChange(event)}>
-                <option value="Vide">Catégorie</option>
-                <option value="Nettoyage">Nettoyage</option>
-                <option value="Formation">Formation</option>
-                <option value="Maison">Maison</option>
+                <option value="Vide">Catégories</option>
+                {CATEGORIES.map((element, index)=><option key={index}value = {element}>{element}</option>)}
             </select>
             <label className="checkboxfait"><input type="checkbox" ></input>Fait</label>
             <input type="submit" className='Envoyer'></input>

@@ -35,14 +35,16 @@ function App() {
     function handleSubmit(event) {
         event.preventDefault();
         const INPUTS = document.querySelectorAll('input[type="text"]');
+        // TRES INTERESSANT : transformer une chaine de caractère en int parseInt()
         INPUTS.forEach((element) => console.log(element.value));
         const newToDo = {
-            todo : event.target[0].value,
-            date : event.target[1].value,
-            heure : parseInt(event.target[2].value) ,
-            checked : event.target[4].checked,
+            todo: event.target[0].value,
+            date: event.target[1].value,
+            heure: parseInt(event.target[2].value),
+            checked: event.target[4].checked,
             categorie: event.target[3].value
         }
+        // "..." permet d'utiliser une COPIE du tableau todo.
         const tab = [...todo, newToDo]
         console.log(tab)
 
@@ -55,11 +57,11 @@ function App() {
     const [maison, setMaison] = useState(true)
 
     const TODOLIST = todo.filter(element => {
-        if(element.categorie == 'Nettoyage' && !nettoyage == true){
+        if (element.categorie == 'Nettoyage' && !nettoyage == true) {
             return false
-        } else if (element.categorie == 'Formation' && !formation == true){
+        } else if (element.categorie == 'Formation' && !formation == true) {
             return false
-        } else if(element.categorie == 'Maison' && !maison == true){
+        } else if (element.categorie == 'Maison' && !maison == true) {
             return false
         } return true
     })
@@ -70,9 +72,9 @@ function App() {
             <h3>Date du jour : {DATE.toLocaleString()}</h3>
             <Form onSubmit={(event) => handleSubmit(event)} />
             <section className="sectionFiltre">
-                <label><input className="inputFiltre" type='checkbox' checked={nettoyage} onChange={()=>setNettoyage(!nettoyage)}></input>Nettoyage</label>
-                <label><input className="inputFiltre" type='checkbox' checked={formation} onChange={()=>setFormation(!formation)}></input>Formation</label>
-                <label><input className="inputFiltre" type='checkbox' checked={maison} onChange={()=>setMaison(!maison)}></input>Maison</label>
+                <label><input className="inputFiltre" type='checkbox' checked={nettoyage} onChange={() => setNettoyage(!nettoyage)}></input>Nettoyage</label>
+                <label><input className="inputFiltre" type='checkbox' checked={formation} onChange={() => setFormation(!formation)}></input>Formation</label>
+                <label><input className="inputFiltre" type='checkbox' checked={maison} onChange={() => setMaison(!maison)}></input>Maison</label>
             </section>
             <ul className="list">
                 {TODOLIST.map((todo) => (
