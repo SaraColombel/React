@@ -74,5 +74,13 @@ function App() {
   return <h1 className="ThistleColor">Aucun utilisateur d'inscrit</h1>;
 }
 
-
 export default App;
+
+function Compteur (){
+  const [count, setCount] = useState(0)
+
+  return <>
+  <p>Compteur : {count}</p>
+  <button onClick={()=>setCount(count + 1)}>Ajouter 1</button>
+  </>
+}

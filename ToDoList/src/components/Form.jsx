@@ -3,18 +3,18 @@ function handleChange(event) {
     console.log(event.target.value);
 }
 return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit}className='formToDo'>
     <input className='input'
         type="text"
-        placeholder="La ToDo"
+        placeholder="Tâche"
         onChange={(event) => handleChange(event)}
     ></input>
     <input className='input'
         type="text"
-        placeholder="La Date"
+        placeholder="Date"
         onChange={(event) => handleChange(event)}
     ></input>
-    <input type="submit"></input>
+    <input type="submit" className='Envoyer'></input>
     </form>
 );
 }
