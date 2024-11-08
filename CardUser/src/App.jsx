@@ -63,8 +63,8 @@ function App() {
     return (
       <>
         <h1 className="ThistleColor">Liste des Utilisateurs</h1>
-        <p>Il y a {USER.length} utilisateurs inscrits!</p>
-        <input type="text" onChange={(event)=>setSearch(event.target.value)}></input>
+        <p className="nbreInscrits">Il y a {USER.length} utilisateurs inscrits !</p>
+        <input type="text" className="searchBar" placeholder="Recherche" onChange={(event)=>setSearch(event.target.value)}></input>
         <div className="center">
           {USERS_LIST.map((user) => (
             <Card

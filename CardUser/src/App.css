@@ -37,6 +37,15 @@
   color: #888;
 }
 
-.divLike{
-  
+.searchBar{
+  background-color: aliceblue;
+  border-radius: 1ch;
+  height: 25px;
+  width: 30%;
+  font-size: medium;
+  color: black;
+}
+
+.nbreInscrits{
+  font-size: 120%;
 }
