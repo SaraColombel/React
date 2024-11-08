@@ -1,23 +1,48 @@
 import './App.css'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import Blog from './pages/Blog'
+import PageError from './pages/PageError'
+import MainNav from './component/MainNav'
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element: <Accueil />
+    path: '/',
+    // Composant 'Root' ou 'Template' remplace parent
+    element: <Root />,
+    errorElement: <PageError />,
+    children: [
+      {
+        path: '',
+        element: <Accueil />,
+        errorElement: <PageError />,
+      },
+      {
+        path: '/blog',
+        element: <Blog />,
+        errorElement: <PageError />
+      }
+    ]
   },
-  {
-    path:'/blog',
-    element: <Blog />
-  }
 ])
+
+function Root() {
+  return <>
+    <header>
+      <MainNav />
+    </header>
+    <main>
+      <Outlet />
+    </main>
+    <footer>
+    </footer>
+  </>
+}
 
 function App() {
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }
