@@ -2,11 +2,12 @@ import './App.css'
 import { createBrowserRouter, Outlet, NavLink, RouterProvider} from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import Calendar from './pages/Calendar'
-import CardUser from './pages/CardUser'
 import Contact from './pages/Contact'
 import PageError from './pages/PageError'
 import Portfolio from './pages/Portfolio'
 import ToDoList from './pages/ToDoList'
+import CardUser from './pages/CardUser'
+
 
 const router = createBrowserRouter([
   {
@@ -46,11 +47,11 @@ const router = createBrowserRouter([
 
 function Root() {
   return <>
-    <header>
-      <h1>Mon Portfolio</h1>
-      <NavLink to={''}>Accueil </NavLink>
-      <NavLink to={'/portfolio'}>Portfolio </NavLink>
-      <NavLink to={'/contact'}>Contact </NavLink>
+    <header className="navBar">
+      <h1 className="titreNavBar">Mon Portfolio</h1>
+      <NavLink className="NavLink" to={''}>Accueil </NavLink>
+      <NavLink className="NavLink" to={'/portfolio'}>Portfolio </NavLink>
+      <NavLink className="NavLink" to={'/contact'}>Contact </NavLink>
     </header>
     <main>
       <Outlet />

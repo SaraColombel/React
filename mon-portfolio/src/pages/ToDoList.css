@@ -1,0 +1,210 @@
+.navbar {
+    background-color: thistle;
+    color: #242424;
+    padding: 15px;
+    border-radius: 1ch;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    padding-top: 8px;
+}
+
+.logoImg {
+    margin-right: 20px;
+    border-radius: 1ch;
+}
+
+ul,
+li {
+    display: flex;
+    padding-right: 20px;
+    font-size: 110%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: lavenderblush;
+    color: #242424;
+    padding: 10px;
+    border-radius: 1ch;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: lavender;
+    color: #242424;
+    padding: 10px;
+    border-radius: 1ch;
+    margin-top: 10px;
+}
+
+/* h1 {
+    font-size: 200%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #242424;
+} */
+
+.input {
+    background-color: white;
+    margin-right: 1%;
+    border: solid 1px #c0c0c0;
+    border-radius: 0.5ch;
+    height: 25px;
+    font-size: 110%;
+    width: 20%;
+    box-shadow: 2px 1px 2px grey;
+    color: #242424;
+}
+
+.buttonToDo {
+    /* height: 25px;
+    width: 50px;
+    background-color: white;
+    border-width: 0;
+    border-radius: 0.5ch;
+    color: #242424;
+    border: solid 1px #c0c0c0;
+    box-shadow: 2px 1px 2px black;
+    float: right;
+    font-size: 20px; */
+    margin-left: 5px;
+    border-radius: 8px;
+    padding: 0px 0.9em;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #242424;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border: 1px solid transparent;
+    padding-bottom: 3px;
+}
+
+.formToDo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.Envoyer {
+    /* height: 30px;
+    border-radius: 0.5ch;
+    background-color: white;
+    border-width: 0;
+    color: black;
+    border: solid 1px #c0c0c0;
+    box-shadow: 2px 1px 2px grey;
+    font-size: 110%;
+    color: #242424;
+    background-color: rgb(231, 173, 231); */
+    border-radius: 8px;
+    padding: 0.2em 1em;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #242424;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border: 1px solid transparent;
+}
+
+.h {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.checkbox {
+    margin-right: 15px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.checkboxfait {
+    font-size: 125%;
+    margin-right: 15px;
+    color: #242424;
+}
+
+.inputDate {
+    background-color: white;
+    margin-right: 1%;
+    border: solid 1px #c0c0c0;
+    border-radius: 0.5ch;
+    height: 25px;
+    font-size: 110%;
+    width: 13%;
+    box-shadow: 2px 1px 2px grey;
+    color: #242424;
+}
+
+.inputHeureRestante {
+    background-color: white;
+    margin-right: 1%;
+    border: solid 1px #c0c0c0;
+    border-radius: 0.5ch;
+    height: 25px;
+    font-size: 110%;
+    width: 17%;
+    box-shadow: 2px 1px 2px grey;
+    color: #242424;
+}
+
+.green{
+    background-color: rgba(150, 214, 150, 0.63);
+    margin-bottom: 1%;
+    border-radius: 1ch;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 650px;
+    max-width: 650px;
+}
+
+.orange{
+    background-color: rgba(255, 194, 170, 0.678);
+    margin-bottom: 1%;
+    border-radius: 1ch;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 650px;
+    max-width: 650px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionFiltre{
+    margin-top: 10px;
+    label{
+        margin-right: 5%;
+        font-size: 120%;
+        color : #242424;
+    }
+    .inputFiltre{
+        margin-right: 8px;
+    }
+}

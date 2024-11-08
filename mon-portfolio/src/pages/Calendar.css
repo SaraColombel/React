@@ -1,0 +1,29 @@
+.card {
+    padding: 2em;
+    width: 350px;
+    font-size: 150%;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.backgroundOrange:hover {
+    background-color: orange;
+}
+
+.backgroundOrange {
+    margin: 3px;
+    border: solid grey 1px;
+    text-align: center;
+}
+
+.month {
+    background-color: orange;
+    font-size: 3rem;
+}
+
+.grid-7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
